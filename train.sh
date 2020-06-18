@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+python3 -m sockeye.train --source sockeye/data/ENT-DESC\ dataset/train.amr \
+        --target sockeye/data/ENT-DESC\ dataset/train_surface.pp.txt \
+        --source-graphs sockeye/data/ENT-DESC\ dataset/train.grh \
+        --validation-source sockeye/data/ENT-DESC\ dataset/dev.amr \
+        --validation-target sockeye/data/ENT-DESC\ dataset/dev_surface.pp.txt \
+        --val-source-graphs sockeye/data/ENT-DESC\ dataset/dev.grh \
+        --edge-vocab sockeye/data/ENT-DESC\ dataset/edge_vocab.json \
+        --batch-size 16 \
+        --batch-type sentence \
+        --word-min-count 2:2 \
+        --num-embed 300:300 \
+        --embed-dropout .5:.5 \
+        --max-seq-len 149:149 \
+        --encoder gcn \
+        --gcn-activation relu \
+        --gcn-num-hidden 360 \
+        --gcn-pos-embed 300 \
+        --decoder rnn \
+        --num-layers 6:1 \
+        --rnn-num-hidden 300 \
+        --rnn-decoder-hidden-dropout 0.2 \
+        --checkpoint-frequency 1000 \
+        --max-num-checkpoint-not-improved 28 \
+        --initial-learning-rate 0.0003 \
+        --learning-rate-reduce-factor 0.7 \
+        --learning-rate-reduce-num-not-improved 6 \
+        --gcn-num-layers 6 \
+        --weight-init-xavier-factor-type in \
+        --weight-init-scale 2.34 \
+        --decode-and-evaluate 100 \
+        --output sockeye/model \
+        --overwrite-output \
+        --device-ids 0 \
+        --gcn-dropout 0.1 \
+        --gcn-adj-norm \
+        --rnn-attention-type coverage \
+        --shared-vocab \
+        --weight-tying \
+        --weight-tying-type src_trg \
+	--attention-based-copying   \
+        --weight-normalization
