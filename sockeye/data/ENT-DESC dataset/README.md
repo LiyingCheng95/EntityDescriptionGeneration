@@ -15,7 +15,7 @@ This step finally results in a dataset consisting of more than 110k entity-text 
 ## Data Preprocessing
 We need to convert the dataset into multi graphs for training. For details please refer to the [paper](https://arxiv.org/pdf/2004.14813.pdf).
 
-The preprocessed dataset is saved in `./ENT-DESC\ dataset`. Note, due to the dataset size, training files are saved as `.zip`.
+The preprocessed dataset is saved under current directory. Note, due to the dataset size, training files are saved as `.zip`.
 
 ## Citation
 ```
