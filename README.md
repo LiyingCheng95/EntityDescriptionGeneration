@@ -20,11 +20,11 @@ Incubating contains the GPU bindings. Depending on your version of CUDA you can 
 ```
 where `${CUDA_VERSION}` can be `75` (7.5), `80` (8.0), `90` (9.0), `91` (9.1), or `92` (9.2).
 
-## Preprocessing
+## ENT-DESC Dataset
 
-We need to convert the dataset into multi graphs for training. For details please refer to the [paper](https://arxiv.org/pdf/2004.14813.pdf).
+The preprocessed ENT-DESC dataset is saved in `./sockeye/data`. For more details regarding the data preparation step, please refer to [ENT-DESC](https://github.com/LiyingCheng95/EntityDescriptionGeneration/tree/master/sockeye/data).
 
-The preprocessed dataset is saved in `./sockeye/data`
+Before that, we need to convert the raw dataset into multi graphs for training. For details please refer to the [paper](https://arxiv.org/pdf/2004.14813.pdf).
 
 ## Training
 
