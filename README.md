@@ -55,12 +55,6 @@ python3 -m sockeye.evaluate -r sockeye/data/ENT-DESC\ dataset/test_surface.pp.tx
 ```
 
 ## Citation
-```
-@article{cheng2020knowledge,
-  title={Knowledge Graph Empowered Entity Description Generation},
-  author={Cheng, Liying and Zhang, Yan and Wu, Dekun and Jie, Zhanming and Bing, Lidong and Lu, Wei and Si, Luo},
-  journal={arXiv preprint arXiv:2004.14813},
-  year={2020}
-}
-```
+
+to be updated
 
