@@ -19,10 +19,10 @@ The preprocessed dataset is saved under current directory. Note, due to the data
 
 ## Citation
 ```
-@article{cheng2020knowledge,
-  title={Knowledge Graph Empowered Entity Description Generation},
-  author={Cheng, Liying and Zhang, Yan and Wu, Dekun and Jie, Zhanming and Bing, Lidong and Lu, Wei and Si, Luo},
-  journal={arXiv preprint arXiv:2004.14813},
+@inproceedings{cheng2020ent,
+  title={ENT-DESC: Entity Description Generation by Exploring Knowledge Graph},
+  author={Cheng, Liying and Wu, Dekun and Bing, Lidong and Zhang, Yan and Jie, Zhanming and Lu, Wei and Si, Luo},
+  booktitle={Proceedings of EMNLP},
   year={2020}
 }
 ```
