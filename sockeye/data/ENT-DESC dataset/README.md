@@ -13,9 +13,22 @@ We then use the [Wikidata Query Service](https://query.wikidata.org/) to search 
 This step finally results in a dataset consisting of more than 110k entity-text pairs with 3 million triples in the KG.
 
 ## Data Preprocessing
-We need to convert the dataset into multi graphs for training. For details please refer to the [paper](https://arxiv.org/pdf/2004.14813.pdf).
+We need to convert the dataset into multi graphs for training. 
 
-The preprocessed dataset is saved under current directory. Note, due to the dataset size, training files are saved as `.zip`.
+`xxx-entities.txt` shows all the input entities before exploring the knowledge graph.
+
+The input triples are in `xxx-triples.txt`. To convert these data into multi-graphs, just simply run `convert_multi_graph.py`. Then you will get `xxx.amr`, `xxx.grh`, `xxx.amrgrh` as the input files for the model.
+`xxx.amr` shows all the nodes in the multi-graph structure.
+`xxx.grh` shows all the relations connecting all nodes in the multi-graph structure.
+`xxx.amrgrh` shows the combination of the above two files.
+
+The output texts are in `xxx_surface.pp.txt`.
+
+`edge_vocab.json` shows the indices of different edges.
+
+The preprocessed dataset is saved under current directory. `xxx` refers to `train/dev/test`. Note, due to the dataset size, training files are saved as `.zip`.
+
+For more details, please refer to the [paper](https://arxiv.org/pdf/2004.14813.pdf).
 
 ## Citation
 ```
