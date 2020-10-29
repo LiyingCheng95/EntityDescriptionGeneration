@@ -55,6 +55,12 @@ python3 -m sockeye.evaluate -r sockeye/data/ENT-DESC\ dataset/test_surface.pp.tx
 ```
 
 ## Citation
-
-to be updated
+```
+@inproceedings{cheng2020ent,
+  title={ENT-DESC: Entity Description Generation by Exploring Knowledge Graph},
+  author={Cheng, Liying and Wu, Dekun and Bing, Lidong and Zhang, Yan and Jie, Zhanming and Lu, Wei and Si, Luo},
+  booktitle={Proceedings of EMNLP},
+  year={2020}
+}
+```
 
